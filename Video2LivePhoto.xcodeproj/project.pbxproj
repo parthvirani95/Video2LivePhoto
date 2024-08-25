@@ -330,7 +330,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 328KUR279N;
+				DEVELOPMENT_TEAM = RCTGLVMTQR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Video2LivePhoto/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "save livephoto to the gallary";
@@ -362,7 +362,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 328KUR279N;
+				DEVELOPMENT_TEAM = RCTGLVMTQR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Video2LivePhoto/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "save livephoto to the gallary";
