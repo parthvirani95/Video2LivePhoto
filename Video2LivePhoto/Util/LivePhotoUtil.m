@@ -74,6 +74,7 @@
                     [request addResourceWithType:PHAssetResourceTypePairedVideo fileURL:pairedVideoURL options:[PHAssetResourceCreationOptions new]];
                 } completionHandler:^(BOOL success, NSError * _Nullable error) {
                     dispatch_async(dispatch_get_main_queue(), ^{
+                        NSLog(@"Completed converting");
                         complete(error==nil, error.localizedDescription);
                     });
                 }];
