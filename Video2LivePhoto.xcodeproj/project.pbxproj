@@ -19,6 +19,7 @@
 		6AB6888E2BBB859F0072AE86 /* LivePhotoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB688882BBB859F0072AE86 /* LivePhotoUtil.m */; };
 		6AB6888F2BBB859F0072AE86 /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6888A2BBB859F0072AE86 /* AVAssetExtension.swift */; };
 		6AB688902BBB87720072AE86 /* origin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6AB688832BBB84570072AE86 /* origin.mp4 */; };
+		9335C63B2C7C5C1400DCFFBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9335C63A2C7C5C1400DCFFBC /* ContentView.swift */; };
 		93A6BB5F2C7B763F00E51187 /* output.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93A6BB5E2C7B763F00E51187 /* output.mov */; };
 		93A6BB612C7B764F00E51187 /* output_new.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93A6BB602C7B764F00E51187 /* output_new.mov */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		6AB688882BBB859F0072AE86 /* LivePhotoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivePhotoUtil.m; sourceTree = "<group>"; };
 		6AB688892BBB859F0072AE86 /* LivePhotoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivePhotoUtil.h; sourceTree = "<group>"; };
 		6AB6888A2BBB859F0072AE86 /* AVAssetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
+		9335C63A2C7C5C1400DCFFBC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93A6BB5E2C7B763F00E51187 /* output.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output.mov; sourceTree = "<group>"; };
 		93A6BB602C7B764F00E51187 /* output_new.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output_new.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				93A6BB602C7B764F00E51187 /* output_new.mov */,
 				93A6BB5E2C7B763F00E51187 /* output.mov */,
 				6AB688832BBB84570072AE86 /* origin.mp4 */,
+				9335C63A2C7C5C1400DCFFBC /* ContentView.swift */,
 				6A7F765A2BBA380F00E56F97 /* AppDelegate.swift */,
 				6A7F765C2BBA380F00E56F97 /* SceneDelegate.swift */,
 				6A7F765E2BBA380F00E56F97 /* ViewController.swift */,
@@ -181,6 +184,7 @@
 			files = (
 				6A7F765F2BBA380F00E56F97 /* ViewController.swift in Sources */,
 				6A7F765B2BBA380F00E56F97 /* AppDelegate.swift in Sources */,
+				9335C63B2C7C5C1400DCFFBC /* ContentView.swift in Sources */,
 				6AB6888E2BBB859F0072AE86 /* LivePhotoUtil.m in Sources */,
 				6A7F765D2BBA380F00E56F97 /* SceneDelegate.swift in Sources */,
 				6AB6888B2BBB859F0072AE86 /* Converter4Image.swift in Sources */,

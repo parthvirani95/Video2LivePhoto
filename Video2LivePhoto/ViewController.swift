@@ -1,17 +1,28 @@
 import UIKit
 import UniformTypeIdentifiers
 import MobileCoreServices
+import SwiftUI
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     override func viewDidLoad() {
          super.viewDidLoad()
 
-         let selectFileButton = UIButton(type: .system)
-         selectFileButton.setTitle("Select Video", for: .normal)
-         selectFileButton.addTarget(self, action: #selector(selectFileTapped), for: .touchUpInside)
-         selectFileButton.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-         selectFileButton.center = view.center
-         view.addSubview(selectFileButton)
+        // Create an instance of UIHostingController with ContentView as the root view
+        let contentView = UIHostingController(rootView: ContentView())
+
+                // Add the SwiftUI view to the current view controller
+        addChild(contentView)
+        contentView.view.frame = view.bounds
+        contentView.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(contentView.view)
+        contentView.didMove(toParent: self)
+        
+//        let selectFileButton = UIButton(type: .system)
+//         selectFileButton.setTitle("Select Video", for: .normal)
+//         selectFileButton.addTarget(self, action: #selector(selectFileTapped), for: .touchUpInside)
+//         selectFileButton.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
+//         selectFileButton.center = view.center
+//         view.addSubview(selectFileButton)
      }
 
      @objc func selectFileTapped() {
@@ -57,63 +68,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
      func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
          picker.dismiss(animated: true, completion: nil)
      }
-    
-    
-//    override func viewDidLoad() {
-//           super.viewDidLoad()
-//
-//           // Add a button to select a video file
-//           let selectFileButton = UIButton(type: .system)
-//           selectFileButton.setTitle("Select Video", for: .normal)
-//           selectFileButton.addTarget(self, action: #selector(selectFileTapped), for: .touchUpInside)
-//           selectFileButton.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-//           selectFileButton.center = view.center
-//           view.addSubview(selectFileButton)
-//       }
-//
-//       @objc func selectFileTapped() {
-//           // Present the document picker to select a video file
-//           let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.movie])
-//           documentPicker.delegate = self
-//           present(documentPicker, animated: true, completion: nil)
-//       }
-//
-//       // UIDocumentPickerDelegate method
-//       func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
-//           guard let selectedURL = urls.first else { return }
-//           processVideoFile(at: selectedURL)
-//       }
-//
-//       func processVideoFile(at url: URL) {
-//           // Move the selected file to a temporary location
-//           
-//           
-//           var tmpPath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first! + "/selected.mov"
-//           var tmpURL = URL(filePath: tmpPath)
-//          
-////           if let cachesDirectory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first {
-////               tmpURL = cachesDirectory.appendingPathComponent("selected.mov")
-////           }
-//           
-//           NSLog("URL converting" + String(describing: tmpURL));
-//           
-//           do {
-////               try FileManager.default.removeItem(at: tmpURL)
-//               try FileManager.default.copyItem(at: url, to: tmpURL)
-//               // Convert the video to live wallpaper
-//               LivePhotoUtil.convertVideo(tmpPath) { success, msg in
-//                   print(msg ?? "")
-//               }
-//           } catch {
-//               NSLog("Failed to copy file: \(error.localizedDescription)")
-//           }
-//           
-////           try? FileManager.default.removeItem(at: tmpURL)
-////           try? FileManager.default.copyItem(at: url, to: tmpURL)
-////           try? FileManager.default.copyItem(at: Bundle.main.url(forResource: "selected", withExtension: "mov"), to: tmpURL)
-//      
-//        
-//       }
+
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
