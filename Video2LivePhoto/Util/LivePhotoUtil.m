@@ -26,7 +26,7 @@
 
     Converter4Video *converter = [[Converter4Video alloc] initWithPath:finalPath];
     
-    [converter durationVideoAt:path outputPath:durationPath targetDuration:3 completion:^(BOOL success, NSError * error) {
+    [converter durationVideoAt:path outputPath:durationPath targetDuration:2 completion:^(BOOL success, NSError * error) {
     
     [converter accelerateVideoAt:durationPath to:livePhotoDuration outputPath:acceleratePath completion:^(BOOL success, NSError * error) {
         
@@ -42,7 +42,7 @@
 //            if (i!=5) {
 //                continue;
 //            }
-            CMTime time = CMTimeMakeWithSeconds(0.5, asset.duration.timescale);
+            CMTime time = CMTimeMakeWithSeconds(0.01, asset.duration.timescale);
             [times addObject:[NSValue valueWithCMTime:time]];
 //        }
         dispatch_queue_t q = dispatch_queue_create("image", DISPATCH_QUEUE_SERIAL);
