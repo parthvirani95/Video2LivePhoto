@@ -12,7 +12,7 @@
     
     NSURL *metaURL = [NSBundle.mainBundle URLForResource:@"metadata" withExtension:@"mov"];
     CGSize livePhotoSize = CGSizeMake(1080, 1920);
-    CMTime livePhotoDuration = CMTimeMake(800, 600);
+    CMTime livePhotoDuration = CMTimeMake(550, 600);
     NSString *assetIdentifier = NSUUID.UUID.UUIDString;
     
     NSString *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
@@ -26,7 +26,7 @@
 
     Converter4Video *converter = [[Converter4Video alloc] initWithPath:finalPath];
     
-    [converter durationVideoAt:path outputPath:durationPath targetDuration:3 completion:^(BOOL success, NSError * error) {
+    [converter durationVideoAt:path outputPath:durationPath targetDuration:1 completion:^(BOOL success, NSError * error) {
     
     [converter accelerateVideoAt:durationPath to:livePhotoDuration outputPath:acceleratePath completion:^(BOOL success, NSError * error) {
         
