@@ -22,6 +22,7 @@
 		93A6BB5F2C7B763F00E51187 /* output.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93A6BB5E2C7B763F00E51187 /* output.mov */; };
 		93A6BB612C7B764F00E51187 /* output_new.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93A6BB602C7B764F00E51187 /* output_new.mov */; };
 		93BF82B02C89571E0022AD37 /* meta_working_worst.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93BF82AE2C89571E0022AD37 /* meta_working_worst.mov */; };
+		93BF82B22C8957D00022AD37 /* metadata.mov in Resources */ = {isa = PBXBuildFile; fileRef = 93BF82B12C8957D00022AD37 /* metadata.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		93A6BB5E2C7B763F00E51187 /* output.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output.mov; sourceTree = "<group>"; };
 		93A6BB602C7B764F00E51187 /* output_new.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output_new.mov; sourceTree = "<group>"; };
 		93BF82AE2C89571E0022AD37 /* meta_working_worst.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = meta_working_worst.mov; sourceTree = "<group>"; };
+		93BF82B12C8957D00022AD37 /* metadata.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = metadata.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		6A7F766E2BBA382300E56F97 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				93BF82B12C8957D00022AD37 /* metadata.mov */,
 				93BF82AE2C89571E0022AD37 /* meta_working_worst.mov */,
 				6AB6888A2BBB859F0072AE86 /* AVAssetExtension.swift */,
 				6AB688852BBB859F0072AE86 /* Converter4Image.swift */,
@@ -170,6 +173,7 @@
 				6A7F76672BBA381100E56F97 /* LaunchScreen.storyboard in Resources */,
 				93BF82B02C89571E0022AD37 /* meta_working_worst.mov in Resources */,
 				93A6BB5F2C7B763F00E51187 /* output.mov in Resources */,
+				93BF82B22C8957D00022AD37 /* metadata.mov in Resources */,
 				6A7F76642BBA381100E56F97 /* Assets.xcassets in Resources */,
 				6A7F76622BBA380F00E56F97 /* Main.storyboard in Resources */,
 			);
